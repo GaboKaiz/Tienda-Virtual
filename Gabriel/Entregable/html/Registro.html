@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <link rel="stylesheet" href="../css/Registro.css">
+</head>
+<body>
+    <div class="arriba">
+        <div class="nombre">
+            <div class="logo">
+              <img src="../imagenes/coronasdas.png" alt="" width="200px" />
+            </div>
+            <h1>Marvel</h1>
+            <div class="abajo">
+              <p>Shopp</p>
+            </div>
+          </div>
+        </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Registro</h2>
+            <div id="successMessage" class="success-message">Registro Exitoso <span>&#10004;</span></div>
+            <form id="registerForm" action="../Usuario/Registro.php" method="POST">
+                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+            <div class="inicio-link">
+                <p>Ya tienes una cuenta? <a href="../html/Usuario.html">Iniciar Sessión</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSuccessMessage() {
+        // Mostrar el mensaje de éxito al enviar el formulario de registro
+        document.getElementById("successMessage").style.display = "block";
+        return false; // Evitar el envío automático del formulario
+    }
+    </script>
+</body>
+</html>

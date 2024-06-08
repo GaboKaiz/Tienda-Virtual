@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <link rel="stylesheet" href="../css/Usuario.css">
+</head>
+<body>
+    <div class="arriba">
+        <div class="nombre">
+            <div class="logo">
+              <img src="../imagenes/coronasdas.png" alt="" width="200px" />
+            </div>
+            <h1>Marvel</h1>
+            <div class="abajo">
+              <p>Shopp</p>
+            </div>
+          </div>
+        </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm" action="../Usuario/Login.php" method="POST">
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="register-link">
+                <p>¿No tienes una cuenta? <a href="../html/Registro.html">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

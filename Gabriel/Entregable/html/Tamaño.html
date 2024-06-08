@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamaño + KLK</title>
+    <link rel="stylesheet" href="../css/Tamaño.css" />
+    <style>
+      .styled-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007bff;
+        /* Azul primario */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .styled-button:hover {
+        background-color: #0056b3;
+        /* Azul oscuro */
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .styled-button:active {
+        background-color: #003f7f;
+        /* Azul más oscuro */
+        transform: translateY(0);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- Formulario en el lado izquierdo -->
+          <div class="column is-one-third">
+            <a href="http://localhost/Gabriel/Entregable/html/Principal.html" class="styled-button">Regresar</a>
+            <h2 class="title">REGISTRO DE TAMAÑO</h2>
+            <form action="../php/Tamaño/Controlador.php" method="post">
+              <div class="field">
+                <label class="label" for="codigotamaño"
+                  >Código de Tamaño:</label
+                >
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    name="codigotamaño"
+                    id="codigotamaño"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="clasificaciontamaño"
+                  >Clasificación:</label
+                >
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    name="clasificaciontamaño"
+                    id="clasificaciontamaño"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="field" style="text-align: center">
+                <div class="control">
+                  <input
+                    class="button is-primary"
+                    type="submit"
+                    value="Registrar"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

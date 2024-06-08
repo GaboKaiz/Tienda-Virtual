@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    margin: 0 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.success-message {
+    display: none; /* Inicialmente oculto */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para el enlace de registro */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link p {
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #007bff; /* Color azul para el enlace */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
+}
+.error-message {
+    display: none;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+.nombre {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 80px;
+    align-items: center;
+    color: azure;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.arriba {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000; 
+    color: hsl(var(--foreground));
+    background-color: rgba(18, 149, 231, 0.775);
+    
+}

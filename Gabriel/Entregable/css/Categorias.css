@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5rem;
+    margin-left: 380px;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-align: center;
+}
+
+.column.is-one-third {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    flex: 1;
+    margin-right: -10rem;
+}
+
+/* Form Styles */
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button.is-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button.is-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Data Display Styles */
+.data-display {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    min-height: 500px;
+    overflow-y: auto;
+    background-color: #fafafa;
+}
+/* Estilo para el mensaje de éxito */
+.mensaje-exito {
+    background-color: #4CAF50; /* Color verde */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espacio alrededor del texto */
+    text-align: center; /* Texto centrado */
+    position: fixed; /* Posición fija en la ventana */
+    top: 50%; /* Ubicación vertical al 50% del viewport */
+    left: 50%; /* Ubicación horizontal al 50% del viewport */
+    transform: translate(-50%, -50%); /* Centrar el mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+    display: none; /* Por defecto, ocultar el mensaje */
+  }
+  
+  /* Estilo para animar la aparición del mensaje */
+  .mensaje-exito.mostrar {
+    display: block; /* Mostrar el mensaje */
+    animation: aparecer 1s ease forwards; /* Animación de aparición */
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0; /* Empezar con opacidad 0 (invisible) */
+    }
+    100% {
+      opacity: 1; /* Terminar con opacidad 1 (totalmente visible) */
+    }
+  }
+  
